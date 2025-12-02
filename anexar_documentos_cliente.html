@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anexar Documentos</title>
+  <link rel="stylesheet" href="anexar_documentos_cliente.css">
+</head>
+<body>
+
+  <h1>Anexar Documentos</h1>
+
+  <form id="uploadForm">
+
+    <label>Nome completo:</label>
+    <input type="text" id="nomeCliente" required>
+
+    <label>CPF:</label>
+    <input type="text" id="cpfCliente" required>
+
+    <label>E-mail:</label>
+    <input type="email" id="emailCliente" required>
+
+    <label>Telefone:</label>
+    <input type="tel" id="telefoneCliente" required>
+
+    <hr>
+
+    <h2>Documentos Obrigatórios</h2>
+
+    <div class="doc-box">
+      <label>RG ou CNH:</label>
+      <input type="file" class="docInput" data-tipo="RG/CNH" accept=".pdf,.jpg,.png,.jpeg">
+    </div>
+
+    <div class="doc-box">
+      <label>Comprovante de residência:</label>
+      <input type="file" class="docInput" data-tipo="Comprovante de Residência" accept=".pdf,.jpg,.png,.jpeg">
+    </div>
+
+    <div class="doc-box">
+      <label>Certidão (Nascimento ou Casamento):</label>
+      <input type="file" class="docInput" data-tipo="Certidão" accept=".pdf,.jpg,.png,.jpeg">
+    </div>
+
+    <div class="doc-box">
+      <label>CPF:</label>
+      <input type="file" class="docInput" data-tipo="CPF" accept=".pdf,.jpg,.png,.jpeg">
+    </div>
+
+    <button type="submit">Salvar e Enviar</button>
+
+    <p id="mensagem"></p>
+  </form>
+
+  <!-- Lista temporária de documentos anexados -->
+  <h2>Documentos Anexados:</h2>
+  <ul id="listaDocumentos"></ul>
+
+  <button id="voltar">Voltar</button>
+
+  <script src="anexar_documentos.js"></script>
+</body>
+</html>
