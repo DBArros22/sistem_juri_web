@@ -1,27 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sistema Jurídico</title>
-  <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIEHL Advocacia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
   <div class="container">
-    <h1>Bem-vindo ao Sistema Jurídico</h1>
-    <p>Escolha como deseja acessar:</p>
-
-    <div class="options">
-      <button id="btnCliente">Sou Cliente</button>
-      <button id="btnAdmin">Sou Administrador</button>
-    </div>
-
-    <footer>
-      <p>&copy; 2025 - Sistema Jurídico | Todos os direitos reservados</p>
-    </footer>
+    <a href="#" class="logo">DIEHL Advocacia</a>
+    <ul class="nav-list">
+      <li><a href="#areas">Áreas</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#profissionais">Profissionais</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
   </div>
+</nav>
 
-  <!-- Script apenas de navegação -->
-  <script src="index.js"></script>
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <h1>DIEHL ADVOCACIA</h1>
+  <p>Soluções jurídicas estratégicas com mais de 17 anos de experiência.</p>
+</header>
+
+<!-- ================= ÁREAS DE ATUAÇÃO ================= -->
+<section id="areas" class="services">
+  <div class="container">
+    <h2>Áreas de Atuação</h2>
+    <div class="service-grid">
+      <article class="service-card"><h3>Defesa em Busca e Apreensão e Alienação Fiduciária</h3></article>
+      <article class="service-card"><h3>Defesa em Execução de Título Extrajudicial</h3></article>
+      <article class="service-card"><h3>Ação Monitória</h3></article>
+      <article class="service-card"><h3>Defesa em Ação de Despejo</h3></article>
+      <article class="service-card"><h3>Defesa em Ação de Cobrança<br>(Cartão de Crédito e Dívidas)</h3></article>
+      <article class="service-card"><h3>Direito Previdenciário</h3></article>
+      <article class="service-card"><h3>Direito Trabalhista</h3></article>
+      <article class="service-card"><h3>Direito Tributário</h3></article>
+      <article class="service-card"><h3>Reintegração de Posse</h3></article>
+      <article class="service-card"><h3>Direito Agrário</h3></article>
+      <article class="service-card"><h3>Direito Empresarial</h3></article>
+      <article class="service-card"><h3>Compra e Venda de Títulos Precatórios</h3></article>
+      <article class="service-card"><h3>Inventário</h3></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section id="sobre" class="about">
+  <div class="container">
+    <h2>Sobre Nós</h2>
+    <p>
+      A Diehl Advocacia é um escritório jurídico moderno e humano, criado a partir da união
+      entre a excelência técnica do Dr. Adham Greg Diehl, advogado com mais de 12 anos de
+      experiência sólida e multidisciplinar, e a visão estratégica do CEO José Luiz Vieira,
+      profissional com trajetória destacada em liderança, vendas e gestão de equipes.
+      Somos mais que um escritório: somos um ecossistema de cuidado, estratégia e acompanhamento contínuo, 
+      criado para atender pessoas, famílias e empresas ao longo de toda a vida — não apenas em momentos de crise.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PROFISSIONAIS ================= -->
+<section id="profissionais" class="team">
+  <div class="container">
+    <h2>Profissionais</h2>
+    <div class="carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+      <div class="carousel-track">
+        <a href="profissional-joao.html" class="team-card">
+          <img src="img/jose.png" alt="Dr. João Silva">
+          <p>José (CEO)</p>
+        </a>
+        <a href="profissional-maria.html" class="team-card">
+          <img src="img/loren.png" alt="Dra. Maria Souza">
+          <p>Rayane Loren</p>
+        </a>
+      </div>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section id="contato" class="contact">
+  <div class="container">
+    <h2>Contatos</h2>
+    <p>Email: contato@diehladvocacia.com.br</p>
+    <p>Telefone: (21) 2018-7918</p>
+
+    <div class="social-icons">
+      <a href="https://wa.me/5521982038118" target="_blank">
+        <img src="img/logo_wpp.png" alt="WhatsApp">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="img/instagram_logo.png" alt="Instagram">
+      </a>
+      <a href="https://facebook.com" target="_blank">
+        <img src="img/facebook_logo.png" alt="Facebook">
+      </a>
+      <a href="https://t.me" target="_blank">
+        <img src="img/telegram_logo.png" alt="Telegram">
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
